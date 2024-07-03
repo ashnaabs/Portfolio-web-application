@@ -1,0 +1,12 @@
+<!-- templates/add_user_id.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Add New ID</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add ID</button>
+</form>
+{% endblock %}
